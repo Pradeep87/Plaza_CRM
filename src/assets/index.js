@@ -12,11 +12,23 @@ import CutElements from './images/Cut-Elements.png'
 import whiteCutElements from './images/white-Cut-Elements.png'
 import VideoIcon from './images/Video-Icon.png'
 import SellingEasier from './images/Selling-Easier.png'
+import CompanyName from './images/Company-Name.png'
+import EmailAddress from './images/Email-Address.png'
+import Phonenumber from './images/Phone-number.png'
+import Password from './images/Password.png'
+import ConfirmPassword from './images/Confirm-Password.png'
+import Facebook from './images/Facebook.png'
+import Twitter from './images/Twitter.png'
+
+
+
+
 
 export {
     whiteLogo,
     Login, RegisterIcon, SliderImage, Illustration,
      FinanceSolution, BusinessAnalysis, MarketingStrategy,
-      CustomerService, Sales,CutElements,whiteCutElements,VideoIcon,SellingEasier
+      CustomerService, Sales,CutElements,whiteCutElements,VideoIcon,SellingEasier,CompanyName,EmailAddress,
+      Phonenumber,Password,ConfirmPassword,Facebook,Twitter
 }
 
