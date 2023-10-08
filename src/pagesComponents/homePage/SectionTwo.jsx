@@ -98,14 +98,13 @@ const SectionTwo = () => {
           </div>
 
           <div className="socialIcon">
-          <a href="#">
-            <img src={Twitter} alt="" />
-          </a>
-          <a href="#">
-            <img src={Facebook} alt="" />
-          </a>
+            <a href="https://www.facebook.com/">
+              <img src={Twitter} alt="" />
+            </a>
+            <a href="https://www.facebook.com/">
+              <img src={Facebook} alt="" />
+            </a>
           </div>
-          
         </div>
       </ContentWrapper>
     </Container>
