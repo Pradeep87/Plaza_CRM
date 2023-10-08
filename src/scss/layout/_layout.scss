@@ -18,7 +18,7 @@
   ul {
     @include flex(row, flex-start, flex-start);
     list-style-type: none;
-
+    transition: all 1s;
     li {
       margin: 0px 25px;
 
@@ -50,5 +50,67 @@
 @media screen and (max-width: 1400px) {
   .contentWrapper {
     width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .links {
+    position: relative;
+    @include flex(row, space-between, flex-start);
+    .toggleBox {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .rotateOne {
+      width: 30px;
+      transform: rotate(360deg);
+      position: absolute;
+      z-index: 100;
+    }
+    .hide {
+      width: 0px !important;
+    }
+    .rotateTwo {
+      width: 30px;
+      transform: rotate(90deg);
+      position: absolute;
+      z-index: 100;
+    }
+
+    .toggle {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      @include flex(column, space-between, center);
+
+      .one {
+        transition: all 1s;
+        width: 100%;
+        height: 3px;
+        background-color: $white;
+        border-radius: 5px;
+      }
+    }
+    .hideLinks {
+      transition: all 1s;
+      transform: translateY(-200%);
+      overflow: hidden;
+    }
+    .showLinks {
+      transition: all 1s;
+      transform: translateY(0%);
+      overflow: hidden;
+      background-color: #572967;
+      position: absolute;
+      width: 100%;
+      padding-bottom: 50px;
+      border-bottom: 1px solid $white;
+      @include flex(column, center, flex-start);
+      padding-left: 20px;
+      li {
+        margin: 10px 0px;
+      }
+    }
   }
 }

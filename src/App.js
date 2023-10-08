@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <main>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/features' element={<Features />} />
