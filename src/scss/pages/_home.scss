@@ -1,174 +1,235 @@
 .sectionOne {
-    background-image: url('../../assets/images/Background-Image.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../../assets/images/Background-Image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    .content {
-        padding: 5% 0px;
-        @include flex(row, space-between, center);
+  .content {
+    padding: 5% 0px;
+    @include flex(row, space-between, center);
 
-        button {
-            background-color: $white;
-            color: $Pink;
-            font-weight: 600;
-        }
-
-        .text {
-            color: $white;
-            width: 40%;
-
-            .subtext {
-                font-size: 16px;
-                margin: 20px 0px;
-            }
-
-            .heading {
-
-                font-size: 56px;
-
-                span {
-                    font-weight: 700;
-                }
-            }
-        }
-
-        .image {
-            width: 50%;
-
-            img {
-                width: 100%;
-            }
-        }
-    }
-}
-
-
-
-
-.sectionTwo {
-    .image {
-        width: 50%;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .content {
-        padding: 5% 0px;
-        @include flex(row, space-between, center);
-
-        .registerForm {
-            padding: 20px;
-            border-radius: 10px;
-            background: $white;
-            box-shadow: -3px 3px 34px 6px rgba(0, 0, 0, 0.23);
-
-            .heading {
-                font-size: 36px;
-                text-align: center;
-
-                span {
-                    color: $Pink;
-                    font-weight: 600
-                }
-            }
-
-            form {
-                @include flex(column, flex-start, flex-start);
-
-                .text {
-                    font-size: 16px;
-
-                    span {
-                        font-weight: 600;
-                    }
-                }
-
-                input {
-                    padding: 10px;
-                    margin: 20px 0px;
-                    border-radius: 10px;
-                    font-size: 16px;
-                }
-
-                input[type="checkbox"] {
-                    width: 20px;
-                    padding: 0px;
-                    margin: 0px 10px 0px 0px;
-                }
-
-                .conditions {
-                    @include flex(row, center, center);
-                }
-
-                button {
-                    background: $DarkPurple;
-                    color: $white;
-                    text-align: center;
-                    font-weight: 600;
-                    padding: 10px;
-                    border-radius: 10px;
-                    width: 320px;
-                    margin: 20px 0px;
-                }
-            }
-
-        }
-    }
-}
-
-
-.sectionThree {
-    .heading {
-        font-weight: 700;
-        font-size: 28px;
-        letter-spacing: 1.5px;
-        text-align: center;
-    }
-
-    .subtext {
-        font-size: 16px;
-        font-weight: 600;
-        color: gray;
-        letter-spacing: 1px;
-        text-align: center;
-    }
-
-    .solutions {
-        @include flex(row, center, center);
-        flex-wrap: wrap;
-        margin: 20px 0px;
-
-    }
-}
-
-
-
-
-.solutionsCard {
-    margin: 20px;
-    @include flex(column, center, center);
-    width: 300px;
-
-    .heading {
-        font-size: 18px;
-        letter-spacing: 1.5px;
-
+    button {
+      background-color: $white;
+      color: $Pink;
+      font-weight: 600;
     }
 
     .text {
+      color: $white;
+      width: 40%;
+
+      .subtext {
         font-size: 16px;
-        letter-spacing: 1px;
-        color: gray;
-        text-align: center;
         margin: 20px 0px;
+      }
 
+      .heading {
+        font-size: 56px;
+
+        span {
+          font-weight: 700;
+        }
+      }
     }
 
-    a {
-        color: gray;
-        text-decoration: none;
+    .image {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
     }
+  }
+}
+
+.sectionTwo {
+  .image {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    padding: 5% 0px;
+    @include flex(row, space-between, center);
+
+    .registerForm {
+      padding: 20px;
+      border-radius: 10px;
+      background: $white;
+      box-shadow: -3px 3px 34px 6px rgba(0, 0, 0, 0.23);
+
+      .heading {
+        font-size: 36px;
+        text-align: center;
+
+        span {
+          color: $Pink;
+          font-weight: 600;
+        }
+      }
+
+      form {
+        @include flex(column, flex-start, flex-start);
+
+        .text {
+          font-size: 16px;
+
+          span {
+            font-weight: 600;
+          }
+        }
+
+        input {
+          padding: 10px;
+          margin: 20px 0px;
+          border-radius: 10px;
+          font-size: 16px;
+        }
+
+        input[type="checkbox"] {
+          width: 20px;
+          padding: 0px;
+          margin: 0px 10px 0px 0px;
+        }
+
+        .conditions {
+          @include flex(row, center, center);
+        }
+
+        button {
+          background: $DarkPurple;
+          color: $white;
+          text-align: center;
+          font-weight: 600;
+          padding: 10px;
+          border-radius: 10px;
+          width: 320px;
+          margin: 20px 0px;
+        }
+      }
+    }
+  }
+}
+
+.sectionThree {
+  .heading {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+
+  .subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .solutions {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    margin: 20px 0px;
+  }
+}
+
+.solutionsCard {
+  margin: 20px;
+  @include flex(column, center, center);
+  width: 300px;
+
+  .heading {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+
+  .text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: gray;
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  a {
+    color: gray;
+    text-decoration: none;
+  }
+}
+
+.sectionfour {
+  background: $Pink;
+  padding: 5% 0px;
+
+  .content {
+    @include flex(column, center, center);
+
+    .heading {
+      width: 50%;
+      text-align: center;
+      color: $white;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .subtext {
+      width: 50%;
+      text-align: center;
+      color: $white;
+      font-size: 16px;
+      margin: 20px 0px;
+    }
+
+    button {
+      background: $white;
+      color: $Pink;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
+
+.sectionFive {
+  .image {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    @include flex(row, space-between, center);
+    .heading {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .subtext {
+      color: gray;
+      margin: 20px 0px;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    button {
+      background-color: $DarkPurple;
+      color: $white;
+      border-radius: 6px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 20px 0px;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        margin: 10px 0px;
+      }
+    }
+  }
 }
