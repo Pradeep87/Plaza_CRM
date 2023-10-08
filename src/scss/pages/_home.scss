@@ -12,6 +12,7 @@
       background-color: $white;
       color: $Pink;
       font-weight: 600;
+      padding: 10px;
     }
 
     .text {
@@ -106,7 +107,7 @@
           font-weight: 600;
           padding: 10px;
           border-radius: 10px;
-          width: 320px;
+          width: 250px;
           margin: 20px 0px;
         }
       }
@@ -115,6 +116,10 @@
 }
 
 .sectionThree {
+  .head {
+    @include flex(column, center, center);
+  }
+
   .heading {
     font-weight: 700;
     font-size: 28px;
@@ -134,30 +139,6 @@
     @include flex(row, center, center);
     flex-wrap: wrap;
     margin: 20px 0px;
-  }
-}
-
-.solutionsCard {
-  margin: 20px;
-  @include flex(column, center, center);
-  width: 300px;
-
-  .heading {
-    font-size: 18px;
-    letter-spacing: 1.5px;
-  }
-
-  .text {
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: gray;
-    text-align: center;
-    margin: 20px 0px;
-  }
-
-  a {
-    color: gray;
-    text-decoration: none;
   }
 }
 
@@ -203,10 +184,14 @@
       width: 100%;
     }
   }
+  .contentBox {
+    width: 50%;
+  }
+
   .content {
     @include flex(row, space-between, center);
     .heading {
-      font-size: 36px;
+      font-size: 28px;
       font-weight: 700;
       letter-spacing: 1px;
     }
@@ -229,7 +214,219 @@
       list-style-type: none;
       li {
         margin: 10px 0px;
+        color: gray;
+        padding-left: 10px;
+        &:before {
+          content: "✓  ";
+          color: $DarkPurple;
+          font-weight: 700;
+        }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .sectionOne {
+    .content {
+      .text {
+        color: $white;
+        width: 50%;
+        .heading {
+          font-size: 45px;
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionTwo {
+    .image {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content {
+      padding: 5% 0px;
+      @include flex(row, space-between, center);
+
+      .registerForm {
+        width: 50%;
+        .heading {
+          font-size: 28px;
+        }
+
+        form {
+          .text {
+            font-size: 14px;
+          }
+
+          input {
+            padding: 10px;
+            margin: 20px 0px 0px 0px;
+            font-size: 14px;
+          }
+
+          input[type="checkbox"] {
+            width: 20px;
+            padding: 0px;
+            margin: 0px 10px 0px 0px;
+          }
+
+          .conditions {
+            margin-top: 20px;
+            @include flex(row, center, center);
+          }
+
+          button {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+  .sectionfour {
+    .content {
+      .heading {
+        width: 70%;
+      }
+      .subtext {
+        width: 70%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .sectionOne {
+    .content {
+      .text {
+        color: $white;
+        width: 50%;
+        .heading {
+          font-size: 36px;
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .sectionTwo {
+    .image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      padding: 5% 0px;
+      @include flex(column, center, center);
+
+      .registerForm {
+        width: 70%;
+        form {
+          @include flex(column, center, center);
+        }
+      }
+    }
+  }
+  .sectionFive {
+    .image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .contentBox {
+      margin-top: 100px;
+      width: 100%;
+    }
+    .content {
+      @include flex(column, center, center);
+      flex-direction: column-reverse;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .sectionOne {
+    .content {
+      @include flex(column, space-between, center);
+      flex-direction: column-reverse;
+      .text {
+        width: 100%;
+      }
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .sectionTwo {
+    .content {
+      padding: 5% 0px;
+      .registerForm {
+        width: 100%;
+        margin-top: 50px;
+        form {
+          @include flex(column, flex-start, flex-start);
+        }
+      }
+    }
+  }
+  .sectionfour {
+    .content {
+      .heading {
+        width: 100%;
+        font-size: 28px;
+      }
+      .subtext {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// card components
+.solutionsCard {
+  margin: 20px;
+  @include flex(column, center, center);
+  width: 300px;
+
+  .heading {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+
+  .text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: gray;
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  a {
+    color: gray;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .solutionsCard {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .solutionsCard {
+    width: 300px;
   }
 }

@@ -1,16 +1,15 @@
 .container {
   width: 100vw;
-  // border: 1px solid red;
 }
 
 .contentWrapper {
   width: 80%;
   margin: auto;
-  // border: 1px solid green;
+  padding: 100px 0px;
 }
 
 .navbar {
-  background: $DarkPurple;
+  background: #572967;
   padding: 20px 0px;
 }
 
@@ -41,9 +40,14 @@
 
 .footer {
   background: $LightYellow;
-  padding:50px;
   p {
     color: $DarkPurple;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .contentWrapper {
+    width: 90%;
   }
 }

@@ -10,7 +10,8 @@ import {
   Sales,
   CutElements,
   whiteCutElements,
-  VideoIcon,SellingEasier
+  VideoIcon,
+  SellingEasier,
 } from "../../assets";
 import { Link } from "react-router-dom";
 
@@ -156,11 +157,13 @@ const SectionTwo = () => (
 const SectionThree = () => (
   <Container className={"sectionThree"}>
     <ContentWrapper>
-      <p className="heading">Solutions</p>
-      <img src={CutElements} alt="" />
-      <p className="subtext">
-        One Application solver your all Digital Problems
-      </p>
+      <div className="head">
+        <p className="heading">Solutions</p>
+        <img src={CutElements} alt="" />
+        <p className="subtext">
+          One Application solver your all Digital Problems
+        </p>
+      </div>
 
       <div className="solutions">
         {solutions.map((data, idx) => (
