@@ -19,4 +19,17 @@ $fontFamily: 'Nunito', sans-serif;
     align-items: $align;
 }
 
+body{
+    font-family: $fontFamily
+}
+
+button {
+    border: none;
+    outline: none;
+    font-family: $fontFamily;
+    padding: 5px;
+
+}
+
 @import './layout/layout';
+@import './pages/home';

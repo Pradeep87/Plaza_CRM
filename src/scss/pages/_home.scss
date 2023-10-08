@@ -1,0 +1,44 @@
+.sectionOne {
+    background-image: url('../../assets/images/Background-Image.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content {
+        padding: 5% 0px;
+        @include flex(row, space-between, center);
+
+        button {
+            background-color: $white;
+            color: $Pink;
+            font-weight: 600;
+        }
+
+        .text {
+            color: $white;
+            width: 40%;
+
+            .subtext {
+                font-size: 16px;
+                margin: 20px 0px;
+            }
+
+            .heading {
+
+                font-size: 56px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .image {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

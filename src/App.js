@@ -14,7 +14,7 @@ const App = () => {
   }, [])
 
   return (
-    <>
+    <main>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -22,7 +22,7 @@ const App = () => {
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
-    </>
+    </main>
 
   )
 }
