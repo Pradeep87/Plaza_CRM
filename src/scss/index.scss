@@ -20,7 +20,8 @@ $fontFamily: 'Nunito', sans-serif;
 }
 
 body{
-    font-family: $fontFamily
+    font-family: $fontFamily;
+    background: $LightBlue;
 }
 
 button {
@@ -30,6 +31,14 @@ button {
     padding: 5px;
 
 }
+
+input{
+    width: 320px;
+    outline: none;
+    border: 1px solid lightgrey;
+    font-family: $fontFamily;
+}
+
 
 @import './layout/layout';
 @import './pages/home';

@@ -42,3 +42,133 @@
         }
     }
 }
+
+
+
+
+.sectionTwo {
+    .image {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        padding: 5% 0px;
+        @include flex(row, space-between, center);
+
+        .registerForm {
+            padding: 20px;
+            border-radius: 10px;
+            background: $white;
+            box-shadow: -3px 3px 34px 6px rgba(0, 0, 0, 0.23);
+
+            .heading {
+                font-size: 36px;
+                text-align: center;
+
+                span {
+                    color: $Pink;
+                    font-weight: 600
+                }
+            }
+
+            form {
+                @include flex(column, flex-start, flex-start);
+
+                .text {
+                    font-size: 16px;
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+
+                input {
+                    padding: 10px;
+                    margin: 20px 0px;
+                    border-radius: 10px;
+                    font-size: 16px;
+                }
+
+                input[type="checkbox"] {
+                    width: 20px;
+                    padding: 0px;
+                    margin: 0px 10px 0px 0px;
+                }
+
+                .conditions {
+                    @include flex(row, center, center);
+                }
+
+                button {
+                    background: $DarkPurple;
+                    color: $white;
+                    text-align: center;
+                    font-weight: 600;
+                    padding: 10px;
+                    border-radius: 10px;
+                    width: 320px;
+                    margin: 20px 0px;
+                }
+            }
+
+        }
+    }
+}
+
+
+.sectionThree {
+    .heading {
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
+    .subtext {
+        font-size: 16px;
+        font-weight: 600;
+        color: gray;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .solutions {
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        margin: 20px 0px;
+
+    }
+}
+
+
+
+
+.solutionsCard {
+    margin: 20px;
+    @include flex(column, center, center);
+    width: 300px;
+
+    .heading {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+
+    }
+
+    .text {
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: gray;
+        text-align: center;
+        margin: 20px 0px;
+
+    }
+
+    a {
+        color: gray;
+        text-decoration: none;
+    }
+}
