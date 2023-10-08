@@ -1,0 +1,37 @@
+
+// card components
+.solutionsCard {
+    margin: 20px;
+    @include flex(column, center, center);
+    width: 300px;
+  
+    .heading {
+      font-size: 18px;
+      letter-spacing: 1.5px;
+    }
+  
+    .text {
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: gray;
+      text-align: center;
+      margin: 20px 0px;
+    }
+  
+    a {
+      color: gray;
+      text-decoration: none;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .solutionsCard {
+      width: 250px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .solutionsCard {
+      width: 300px;
+    }
+  }
+  

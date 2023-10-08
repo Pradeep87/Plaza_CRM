@@ -1,0 +1,1 @@
+export {default as SolutionsCard} from './SolutionCard/SolutionsCard'
