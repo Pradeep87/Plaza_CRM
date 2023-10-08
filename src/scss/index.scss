@@ -9,3 +9,14 @@ $DarkPurple : #4f2060;
 $Pink : #eb5875;
 $LightBlue: #eef4fd;
 $LightYellow: #f8f9e9;
+$white:#fff;
+$fontFamily: 'Nunito', sans-serif;
+
+@mixin flex($dir, $justify, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@import './layout/layout';

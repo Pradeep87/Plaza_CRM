@@ -1,0 +1,41 @@
+.container {
+    width: 100vw;
+    border: 1px solid red;
+}
+
+.contentWrapper {
+    width: 80%;
+    margin: auto;
+    border: 1px solid green;
+}
+
+.navbar {
+    background: $DarkPurple;
+}
+
+.links {
+    @include flex(row, space-between, flex-start);
+
+    ul {
+        @include flex(row, flex-start, flex-start);
+        list-style-type: none;
+
+        li {
+            margin: 0px 25px;
+
+            a {
+                color: $white;
+                font-family: $fontFamily;
+                font-size: 16px;
+                text-decoration: none;
+                @include flex(row, center, center);
+
+                img {
+                    margin-right: 10px;
+                }
+
+            }
+        }
+
+    }
+}
