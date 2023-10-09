@@ -102,12 +102,12 @@
         input[type="checkbox"] {
           width: 20px;
           padding: 0px;
-          margin: 0px 10px 0px 0px;
         }
 
         .conditions {
+          width: 250px;
           margin-top: 20px;
-          @include flex(row, center, center);
+          @include flex(row, flex-start,flex-start);
         }
 
         button {
@@ -281,19 +281,16 @@
 
           input {
             padding: 10px;
-            margin: 20px 0px 0px 0px;
             font-size: 14px;
           }
 
           input[type="checkbox"] {
             width: 20px;
             padding: 0px;
-            margin: 0px 10px 0px 0px;
           }
 
           .conditions {
             margin-top: 20px;
-            @include flex(row, center, center);
           }
 
           button {
@@ -389,7 +386,7 @@
         width: 100%;
         margin-top: 50px;
         form {
-          @include flex(column, flex-start, flex-start);
+          @include flex(column, center, center);
         }
       }
     }
